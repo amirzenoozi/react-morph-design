@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="http://morphdesign.io/" rel="noopener" target="_blank"><img width="150" src="http://morphdesign.io/images/morph-icon.svg" alt="MorphDesign logo"></a></p>
+  <a href="http://morphdesign.io/" rel="noopener" target="_blank"><img width="150" src="http://morphdesign.io/images/morph-icon.svg" alt="MorphDesign logo"></a>
 </p>
 
 <h1 align="center">موررف دیزاین</h1>
