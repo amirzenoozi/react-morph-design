@@ -43,6 +43,22 @@ export const centered = (vertical: boolean, horizontal: boolean): string => {
   }
 };
 
+
+export const chooseFontWeight = ( weight: string ): string => {
+  switch ( weight ) {
+  case 'thin':
+    return 'ShabnamThin';
+  case 'light':
+    return 'ShabnamLight';
+  case 'regular':
+    return 'Shabnam';
+  case 'medium':
+    return 'ShabnamMedium';
+  case 'bold':
+    return 'ShabnamBold';
+  }
+}
+
 /*
 ================= Description ====================
 colored overlay on top of elements
