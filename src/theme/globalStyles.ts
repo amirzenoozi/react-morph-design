@@ -1,7 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 import { persianFontFaces } from './fa-fonts';
+import { englishFontFaces } from './en-fonts';
 
 const GlobalStyle = createGlobalStyle`
+  ${englishFontFaces}
   ${persianFontFaces}
 
   *, *:before, *:after {
@@ -34,7 +36,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body{
-    font-family: "Shabnam";
+    font-family: "Roboto";
     font-size:16px;
     line-height: 1.2rem;
     min-width: 100vw;
@@ -64,7 +66,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   strong{
-    font-family: "ShabnamMedium";
+    font-family: "RobotoMedium";
     font-weight:normal;
   }
 
