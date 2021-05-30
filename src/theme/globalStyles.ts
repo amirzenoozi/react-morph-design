@@ -1,8 +1,8 @@
-import { createGlobalStyle } from "styled-components";
-import { fontFaces } from "./fonts";
+import { createGlobalStyle } from 'styled-components';
+import { persianFontFaces } from './fa-fonts';
 
 const GlobalStyle = createGlobalStyle`
-  ${fontFaces}
+  ${persianFontFaces}
 
   *, *:before, *:after {
     -webkit-box-sizing: border-box;
@@ -34,7 +34,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body{
-    font-family: MyriadPro;
+    font-family: "Shabnam";
     font-size:16px;
     line-height: 1.2rem;
     min-width: 100vw;
@@ -64,7 +64,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   strong{
-    font-family:MyriadProMedium;
+    font-family: "ShabnamMedium";
     font-weight:normal;
   }
 
