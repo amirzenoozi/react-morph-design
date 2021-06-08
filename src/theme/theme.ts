@@ -4,14 +4,13 @@ import { lightPalette } from "./pallete";
 
 export const theme: MorphTheme = {
   palette: lightPalette,
-  widths: {
-    xsm: rem(500),
+  breakPoints: {
+    xs: rem(500),
+    sm: rem(800),
     md: rem(1050),
-    xmd: rem(1200),
-    lg: rem(1400),
-    slg: rem(1600),
-    xlg: rem(1900),
-    xxlg: rem(2200),
+    lg: rem(1200),
+    xlg: rem(1400),
+    xxlg: rem(1600),
   },
   typography: {
     head1: 48,
