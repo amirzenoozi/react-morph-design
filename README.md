@@ -14,5 +14,5 @@
 
 - [x] Typography
 - [ ] Button
-- [ ] Grid System
+- [ ] GridItem System
 - [ ] Text Field
