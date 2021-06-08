@@ -1,26 +1,26 @@
-interface IPaletteColor {
+interface MorphPaletteColor {
   light: string;
   main: string;
   dark: string;
 }
 
-interface IPaletteText {
+interface MorphPaletteText {
   primary: string;
   secondary: string;
   hint: string;
   disabled: string;
 }
 
-interface IPaletteCommon {
+interface MorphPaletteCommon {
   white: string;
   black: string;
 }
 
-export interface IPallete {
-  primary: IPaletteColor;
-  secondary: IPaletteColor;
-  text: IPaletteText;
-  common: IPaletteCommon;
+export interface MorphPalette {
+  primary: MorphPaletteColor;
+  secondary: MorphPaletteColor;
+  text: MorphPaletteText;
+  common: MorphPaletteCommon;
   success: string;
   error: string;
   warning: string;

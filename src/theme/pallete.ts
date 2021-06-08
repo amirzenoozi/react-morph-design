@@ -1,4 +1,4 @@
-import { IPallete } from "../interfaces/IPalette";
+import { IPallete } from "../interfaces/morph-palette";
 
 export const lightPalette: IPallete = {
   primary: {

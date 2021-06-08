@@ -1,8 +1,8 @@
-import { IPallete } from "./IPalette";
+import { MorphPalette } from "./morph-palette";
 import { Typographies } from 'src/interfaces/typographies';
 
-export interface ITheme {
-  palette: IPallete;
+export interface MorphTheme {
+  palette: MorphPalette;
   widths: {
     xsm: string;
     md: string;
@@ -13,4 +13,5 @@ export interface ITheme {
     xxlg: string;
   };
   typography: Typographies;
+  girdType: 12 | 24,
 }

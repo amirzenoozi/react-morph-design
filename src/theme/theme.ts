@@ -1,8 +1,8 @@
-import { ITheme } from "../interfaces/ITheme";
+import { MorphTheme } from "../interfaces/morph-theme";
 import { rem } from "./functions";
 import { lightPalette } from "./pallete";
 
-export const theme: ITheme = {
+export const theme: MorphTheme = {
   palette: lightPalette,
   widths: {
     xsm: rem(500),
@@ -23,4 +23,5 @@ export const theme: ITheme = {
     cap1: 12,
     cap2: 10,
   },
+  girdType: 24,
 };
