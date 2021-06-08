@@ -2,6 +2,7 @@ import React from 'react';
 import { TypographyProps } from './typography.props';
 import { TypographyStyles } from './typography.style';
 import { useTheme } from 'react-jss';
+import classNames from 'classnames';
 
 const Typography = (props: TypographyProps) => {
   props = {
@@ -13,9 +14,10 @@ const Typography = (props: TypographyProps) => {
   const theme: any = useTheme();
   const classes = TypographyStyles( { ...props, theme });
   const ComponentTag = `${props.component}` as keyof JSX.IntrinsicElements;
+  const ClassList = classNames({[classes.MorphUI_Typography]: true, [props.classNames]: props.classNames !== undefined});
 
   return (
-    <ComponentTag className={classes.MorphUI_Typography}>{ props.children }</ComponentTag>
+    <ComponentTag className={ClassList}>{ props.children }</ComponentTag>
   );
 };
 

@@ -3,4 +3,5 @@ export interface TypographyProps {
   variant?: 'head1' | 'head2' | 'title1' | 'title2' | 'body1' | 'body2' | 'cap1' | 'cap2',
   weight?: 'thin' | 'light' | 'regular' | 'medium' | 'bold',
   children?: any,
+  classNames?: string,
 }
