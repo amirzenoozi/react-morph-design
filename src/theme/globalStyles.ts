@@ -36,11 +36,10 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body{
-    font-family: "Roboto";
+    font-family: "Shabnam";
     font-size:16px;
     line-height: 1.2rem;
-    min-width: 100vw;
-    min-height: 100vh;
+    direction: rtl;
   }
   /* HTML5 display-role reset for older browsers */
   article, aside, details, figcaption, figure,
@@ -66,7 +65,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   strong{
-    font-family: "RobotoMedium";
+    font-family: "ShabnamMedium";
     font-weight:normal;
   }
 

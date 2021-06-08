@@ -6,7 +6,7 @@ const SamplePage = () => {
 
   return (
     <PageContainer>
-      <Typography component={'h1'} variant={'head1'}>Hello World!</Typography>
+      <Typography component={'h1'} variant={'title1'}>تست سایز فونت است!</Typography>
     </PageContainer>
   );
 };
