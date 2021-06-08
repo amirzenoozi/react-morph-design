@@ -6,7 +6,7 @@ const SamplePage = () => {
 
   return (
     <PageContainer>
-      <Typography component={'p'}>Hello World!</Typography>
+      <Typography component={'h1'} variant={'head1'}>Hello World!</Typography>
     </PageContainer>
   );
 };

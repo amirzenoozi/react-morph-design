@@ -1,17 +1,21 @@
 import React from 'react';
 import { TypographyProps } from './typography.props';
-import { TypographyRoot } from './typography.style';
+import { TypographyStyles } from './typography.style';
+import { useTheme } from 'react-jss';
 
-const Typography: React.FC<TypographyProps> = ({
-  component = 'p',
-  variant= 'body1',
-  weight = 'regular',
-  children
-}) => {
+const Typography = (props: TypographyProps) => {
+  props = {
+    ...props,
+    ...(props.weight === undefined ) && { weight: 'regular' },
+    ...(props.variant === undefined ) && { variant: 'body1' },
+    ...(props.component === undefined ) && { component: 'p' },
+  }
+  const theme: any = useTheme();
+  const classes = TypographyStyles( { ...props, theme });
+  const ComponentTag = `${props.component}` as keyof JSX.IntrinsicElements;
+
   return (
-    <TypographyRoot as={component} variant={variant} weight={weight}>
-      { children }
-    </TypographyRoot>
+    <ComponentTag className={classes.MorphUI_Typography}>{ props.children }</ComponentTag>
   );
 };
 

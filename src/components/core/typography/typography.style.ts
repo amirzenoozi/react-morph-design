@@ -1,11 +1,13 @@
-import styled from 'styled-components';
 import { chooseFontWeight, rem } from 'src/theme/functions';
-import { theme } from 'src/theme/theme';
 import { Typographies } from 'src/interfaces/typographies';
+import { createUseStyles } from 'react-jss';
+import { ITheme } from 'src/interfaces/ITheme';
 
-const TypographyRoot = styled.h1<{ variant: keyof Typographies, weight: string }>`
-  font-size: ${ props => rem( theme.typography[props.variant] )  };
-  font-family: ${ props => chooseFontWeight( props.weight ) };
-`;
+const TypographyStyles = createUseStyles((theme: ITheme) => ({
+  MorphUI_Typography: {
+    fontSize: (props: { variant?: keyof Typographies }) => rem(theme.typography[props.variant]),
+    fontFamily: (props: { variant?: keyof Typographies, weight?: string }) => chooseFontWeight( props.weight ),
+  }
+}))
 
-export { TypographyRoot };
+export { TypographyStyles };
