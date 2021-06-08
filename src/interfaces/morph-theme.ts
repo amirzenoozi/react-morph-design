@@ -12,5 +12,5 @@ export interface MorphTheme {
     xxlg: string
   };
   typography: Typographies;
-  girdType: 12 | 24,
+  gridType: 12 | 24,
 }

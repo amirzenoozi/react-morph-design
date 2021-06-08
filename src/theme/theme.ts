@@ -22,5 +22,5 @@ export const theme: MorphTheme = {
     cap1: 12,
     cap2: 10,
   },
-  girdType: 24,
+  gridType: 24,
 };
